@@ -26,6 +26,7 @@
 
 .story {
   background-color: #dcffff;
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -103,7 +104,7 @@
   background-size: 18px;
   left: 0px;
   z-index: 100;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translate(0, 50%);
 }
 
 /* Стрелка вправо */
@@ -153,3 +154,43 @@
 .slide p {
   font-size: 25px;
 }
+
+.slide button {
+  height: 45px;
+  width: 150px;
+  border-radius: 10px;
+  background: #ef3339;
+  color: #dcffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.question-button {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  transform: translate(0, -50%);
+  height: 45px;
+  width: 150px;
+  border-radius: 10px;
+  background: #ef3339;
+  color: #dcffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.questions {
+  background-color: #dcffff;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
